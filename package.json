@@ -1,0 +1,35 @@
+{
+  "name": "bulkhead-mailer",
+  "version": "0.0.1",
+  "description": "A Bulkhead service that allows SailsJS projects to easily use NodeMailer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha test --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeOtter/bulkhead-mailer.git"
+  },
+  "keywords": [
+    "sailsjs",
+    "soa",
+    "soap",
+    "rest",
+    "api",
+    "services",
+    "mail",
+    "nodemailer"
+  ],
+  "author": "Patrick Ryan <patrick.ryan@codeotter.com>",
+  "license": "GPL v2",
+  "bugs": {
+    "url": "https://github.com/CodeOtter/bulkhead-mailer/issues"
+  },
+  "homepage": "https://github.com/CodeOtter/bulkhead-mailer",
+  "dependencies": {
+    "bulkhead": "^0.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.3"
+  }
+}
