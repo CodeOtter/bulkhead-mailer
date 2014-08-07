@@ -33,6 +33,8 @@
     "underscore": "^1.6.0"
   },
   "devDependencies": {
-    "bulkhead-test": "0.0.2"
+    "bulkhead-test": "0.0.2",
+    "grunt": "^0.4.5",
+    "nodemailer-stub-transport": "^0.1.4"
   }
 }
