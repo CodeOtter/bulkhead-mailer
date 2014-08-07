@@ -30,11 +30,11 @@
     "async": "^0.9.0",
     "bulkhead": "0.0.2",
     "nodemailer": "^1.1.1",
+    "nodemailer-stub-transport": "^0.1.4",
     "underscore": "^1.6.0"
   },
   "devDependencies": {
     "bulkhead-test": "0.0.2",
-    "grunt": "^0.4.5",
-    "nodemailer-stub-transport": "^0.1.4"
+    "grunt": "^0.4.5"
   }
 }

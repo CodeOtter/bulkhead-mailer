@@ -16,6 +16,7 @@ module.exports = new function(){
 	 * 
 	 */
 	self.getTransport = function() {
+
 		if(self.transport) {
 			return self.transport;
 		}
@@ -28,7 +29,7 @@ module.exports = new function(){
 			options.service = sails.config.mailer.service;
 		} else {
 			options.host = sails.config.mailer.host;
-			options.port= sails.config.mailer.port;
+			options.port = sails.config.mailer.port;
 			options.secureConnection = sails.config.mailer.secureConnection;
 		}
 
