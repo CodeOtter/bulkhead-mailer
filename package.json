@@ -1,6 +1,6 @@
 {
   "name": "bulkhead-mailer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Bulkhead service that allows SailsJS projects to easily use NodeMailer.",
   "main": "index.js",
   "scripts": {
@@ -28,13 +28,13 @@
   "homepage": "https://github.com/CodeOtter/bulkhead-mailer",
   "dependencies": {
     "async": "^0.9.0",
-    "bulkhead": "0.0.2",
+    "bulkhead": "0.0.5",
     "nodemailer": "^1.1.1",
     "nodemailer-stub-transport": "^0.1.4",
     "underscore": "^1.6.0"
   },
   "devDependencies": {
-    "bulkhead-test": "0.0.2",
+    "bulkhead-test": "0.0.3",
     "grunt": "^0.4.5"
   }
 }
