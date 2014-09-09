@@ -1,1 +1,1 @@
-module.exports = require('./api/services/MailerService');
+module.exports = require('bulkhead').plugins.register('api/services/MailerService');

@@ -1,6 +1,6 @@
 {
   "name": "bulkhead-mailer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Bulkhead service that allows SailsJS projects to easily use NodeMailer.",
   "main": "index.js",
   "scripts": {

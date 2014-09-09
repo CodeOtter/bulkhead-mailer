@@ -22,18 +22,19 @@ module.exports = new function(){
 		}
 
 		var options = {
-			auth: sails.config.mailer.auth
+			auth: self.plugin.config.mailer.auth
 		};
+		
 
-		if(sails.config.mailer.service) {
-			options.service = sails.config.mailer.service;
+		if(self.plugin.config.mailer.service) {
+			options.service = self.plugin.config.mailer.service;
 		} else {
-			options.host = sails.config.mailer.host;
-			options.port = sails.config.mailer.port;
-			options.secureConnection = sails.config.mailer.secureConnection;
+			options.host = self.plugin.config.mailer.host;
+			options.port = self.plugin.config.mailer.port;
+			options.secureConnection = self.plugin.config.mailer.secureConnection;
 		}
 
-		var transport = require(sails.config.mailer.transport)(options);
+		var transport = require(self.plugin.config.mailer.transport)(options);
 		return Nodemailer.createTransport(transport);
 	};
 
@@ -43,7 +44,7 @@ module.exports = new function(){
 	self.dispatch = function(from, to, subject, text, html, headers, done) {
 		this.getTransport().sendMail(_.extend({
 			from: from,
-			to: to || sails.config.mailer.identity,
+			to: to || self.plugin.config.mailer.identity,
 			subject: subject,
 			text: text,
 			html: html || text
